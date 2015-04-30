@@ -38,6 +38,27 @@ def fedDog():
 	global dogLastFed
 	dogLastFed = time.strftime("%a") + " " + time.strftime("%H")
 	print "Dog fed on", dogLastFed
+	
+def volUp():
+	print "volume up"
+
+def volDown():
+	print "volume down"
+	
+def toHDMIOne():
+	print "Switching to HDMI one"
+	
+def toHDMITwo():
+	print "Switching to HDMI two"
+	
+def toHDMIThree():
+	print "Switching to HDMI three"
+	
+def toHDMIFour():
+	print "Switching to HDMI four"
+	
+def toTuner():
+	print "Switching to the tuner"
 
 #Dictionary that converts all strings to functions
 strToFunct = {
@@ -77,6 +98,29 @@ strToFunct = {
 	#check dog fed time
 "WHEN WAS THE DOG LAST FED" : dogLastFed,
 "WHEN WAS THE DOG FED" : dogLastFed
+	#volume up
+"VOLUME UP" : volUp,
+"TURN THE VOLUME UP" :volUp,
+	#volume down
+"VOLUME DOWN" : volDown,
+"TURN THE VOLUME DOWN" : volDown,
+	#swith to hdmi input one
+"HDMI ONE" : toHDMIOne,
+"SWITCH TO HDMI ONE" : toHDMIOne,
+	#swith to hdmi input two
+"HDMI TWO" : toHDMITwo,
+"SWITCH TO HDMI TWO" : toHDMITwo,
+	#swith to HDMI input three
+"HDMI THREE" : toHDMIThree,
+"SWITCH TO HDMI THREE" : toHDMIThree,
+	#swith to HDMI input four
+"HDMI FOUR" : toHDMIFour,
+"SWITCH TO HDMI FOUR" : toHDMIFour,
+	#switch to the tuner
+"TUNER" : toTuner,
+"SWITCH TO TUNER" : toTuner,
+"RADIO" : toTuner,
+"SWITCH TO RADIO" : toTuner,
 }
 
 print "Listening...  (Give it a couple seconds)"
