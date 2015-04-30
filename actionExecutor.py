@@ -83,4 +83,12 @@ print "Listening...  (Give it a couple seconds)"
 while True:
 	line = sys.stdin.readline()
 	line = re.sub("\w*: ", "",line, 1)
-	if line.
+	if line == '':
+		continue
+	#split the line at the first whitespace, getting the name and the command
+	stringSplit = string.split(line,1)
+	name = stringSplit[0]
+	command = stringSplit[1]
+	print name, command
+	
+	
