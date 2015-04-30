@@ -39,8 +39,9 @@ def fedDog():
 	dogLastFed = time.strftime("%a") + " " + time.strftime("%H")
 	print "Dog fed on", dogLastFed
 
+#Dictionary that converts all strings to functions
 strToFunct = {
-	#Turn of the first tv
+	#Turn off the first tv
 "TURN OFF TV" : turnOffTV,
 "TURN OFF THE TV" : turnOffTV,
 	#turn on the first tv
@@ -50,7 +51,33 @@ strToFunct = {
 "TURN OFF RECEIVER" : turnOfReceiver,
 "TURN OFF THE RECEIVER" : turnOffReceiver,
 	#turn on the receiver
-"TURN OFF SECOND TV" : turn	
+"TURN ON RECEIVER" : turnOnReceiver,
+"Turn ON THE RECEIVER" : turnOnReceiver,
+	#turn off the second tv
+"TURN OFF THE SECOND TV" : turnOffSecTV,
+"TURN OFF SECOND TV" : turnOffSecTV,
+	#turn on second tv
+"TURN ON SECOND TV" : turnOnSecTV,
+"TURN ON THE SECOND TV" : turnOnSecTV,
+	#turn off the system
+"POWER OFF" : turnOffSystem,
+"TURN OFF" : turnOffSystem,
+"POWER DOWN" : turnOffSystem,
+"SYSTEM OFF" : turnOffSystem,
+"SHUT DOWN" : turnOffSystem,
+	#turn on the system
+"POWER ON" : turnOnSystem,
+"START" : turnOnSystem,
+"ALL ON" : turnOnSystem,
+	#status report
+"STATUS REPORT" : statusReport,
+	#fed dog
+"I JUST FED THE DOG" : fedDog,
+"I FED THE DOG" : fedDog,
+	#check dog fed time
+"WHEN WAS THE DOG LAST FED" : dogLastFed,
+"WHEN WAS THE DOG FED" : dogLastFed
+}
 
 print "Listening...  (Give it a couple seconds)"
 while True:
