@@ -69,7 +69,7 @@ strToFunct = {
 "TURN ON TV" : turnOnTV,
 "TURN ON THE TV" : turnOnTV,
 	#turn off the receiver
-"TURN OFF RECEIVER" : turnOfReceiver,
+"TURN OFF RECEIVER" : turnOffReceiver,
 "TURN OFF THE RECEIVER" : turnOffReceiver,
 	#turn on the receiver
 "TURN ON RECEIVER" : turnOnReceiver,
@@ -97,7 +97,7 @@ strToFunct = {
 "I FED THE DOG" : fedDog,
 	#check dog fed time
 "WHEN WAS THE DOG LAST FED" : dogLastFed,
-"WHEN WAS THE DOG FED" : dogLastFed
+"WHEN WAS THE DOG FED" : dogLastFed,
 	#volume up
 "VOLUME UP" : volUp,
 "TURN THE VOLUME UP" :volUp,
