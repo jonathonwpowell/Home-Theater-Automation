@@ -130,9 +130,21 @@ while True:
 	if line == '':
 		continue
 	#split the line at the first whitespace, getting the name and the command
-	stringSplit = string.split(line,1)
-	name = stringSplit[0]
-	command = stringSplit[1]
-	print name, command
+	stringSplit = line.split(" ",1)
+	if len(stringSplit) > 1:	
+		name = stringSplit[0]
+		command = stringSplit[1]
+		command = command.strip()
+		print "Name:", name, "Command:", command,
+		if name=="BOB":
+			try:
+				strToFunct[command]()
+			except KeyError:
+				print "That is not a command..."
+				continue
+		else:
+			print "You are not Bob..."
+	else:
+		print "Only Read one word: ",line,
 	
 	
